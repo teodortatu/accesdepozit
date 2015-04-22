@@ -3,7 +3,7 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1" /> 
 <link rel="stylesheet" type="text/css" href="index.css">
-<title>Acces depozit</title>
+<title>Acces depozit - Adaugare produse</title>
 <meta charset="utf-8"/>
 <style>
 	body {
@@ -14,12 +14,15 @@
 <body>
 <table class="title" align="center" width="800px">	
 	<tr>
-		<td width="20%">
+		<td width="20%" align="center">
+			<a href="index.html" >
+				<img src="ic_action_back.png" alt="Inapoi" style="width:48px; height:48px; border:0">
+			</a>
 		</td>
 		<td width="60%" align="center">
 			<h1>Acces depozit</h1>
 		</td>
-		<td>
+		<td align="center">
 			<a href="add.html">
 				<img src="ic_action_new.png" alt="Adauga produs" style="width:48px;height:48px;border:0">
 			</a>
@@ -36,7 +39,7 @@
 						<td style="border-style:solid;border-color:#CCCCCC;border-width:1px;"> 
 							<input type="text" name="zoom_query" style="width:160px; border:0px solid; height:17px; padding:0px 3px; position:relative;">
 						</td>
-						<td style="border-style:solid;border-color:#CCCCCC;border-width:0px;"> 
+						<td style="border-style:solid;border-color:#CCCCCC;border-width:0px;" align="center"> 
 							<input type="submit" value="" style="border-style: none; background: url('searchbutton2.gif') no-repeat; width: 24px; height: 22px;">
 						</td>
 					</tr>
@@ -45,22 +48,36 @@
 		</td>
 	</tr>
 </table>
+
 <br>
 
-<table width="300px" class="title" align="center">
+<table class="title" width="400px" align="center">
 	<tr>
 		<td align="center">
-		<h2>Lista produse:</h2>
-		</td>
-	</tr>
-<table>
-<br>
-<table width="800px" align="center">
-	<tr>
-		<td class="products">
-			<a href="rosii.html"><font color="white">Rosii</font></a>
+			<h2>Adaugare produse</h2>
 		</td>
 	</tr>
 </table>
+<br>
+<table width="800px" align="center">
+	<tr>
+		<td>
+			<form action="add.html">
+				<font color="white">Numele produsului:</font> 
+				<input type="text" name="Numele produsului">
+				<br>
+				<font color="white">Raft: </font>
+				<input type="text" name="Raft:">
+				<br>
+				<font color="white">Rand: </font>
+				<input type="text" name="Rand:">
+				<br>
+				<input type="submit" value="Submit">
+			</form>
+		</td>
+	</tr>
+</table>
+
 </body>
+
 </html>
